@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-image: url('../images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url('../images/mobile/image-hero.jpg');
+    background-position: center;
+  }
+}
+
+.hero-container {
+  @apply container px-6 py-12 mx-auto max-w-6xl;
+}
+
+.hero-box {
+  @apply p-4 mt-32 mb-32 text-4xl font-sans max-w-lg text-white border-2 uppercase md:p-10 md:text-6xl;
+}
+
+.top-container {
+  @apply md:flex items-center  justify-between font-bold text-white;
+}
+
+.nav-item {
+  @apply mx-2 group-hover:border-b group-hover:border-blue-50;
+}
+
+.feature-container {
+  @apply relative flex flex-col mx-auto max-w-6xl px-6 space-y-4 mt-32 mb-36 md:flex-row;
+}
+
+.feature-h2 {
+  @apply font-sans max-w-lg uppercase text-4xl text-center mt-6 mb-6 md:text-left md:text-5xl;
+}
+
+.creation-button {
+  @apply hidden uppercase md:block font-bold px-10 py-2 my-0 border-2 tracking-widest text-center font-alata border-black hover:border-white hover:text-white hover:bg-black;
+}
+
+.creation-h5 {
+  @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-white;
+}
